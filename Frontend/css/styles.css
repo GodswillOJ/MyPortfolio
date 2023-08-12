@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+/* font 1 */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Nanum+Gothic&display=swap');
+/* Font 2 */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Nanum+Gothic&display=swap');
 
-
+html{
+    overflow-x:  hidden;
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -12,6 +17,7 @@ html{
 body{
     background-color: rgb(247, 246, 240);
     font-family: 'Lora', serif;
+    font-family: 'Nanum Gothic', sans-serif;
     transition: .4s;
 }
 
@@ -181,6 +187,7 @@ body.dark-theme{
     box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
     padding-inline: 1.5rem;
     border-radius: 3rem;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .nav__logo,
 .nav__toggle,
@@ -268,6 +275,7 @@ body.dark-theme{
 
 /* Home */
 .home__container{
+    font-family: 'Nanum Gothic', sans-serif;
     row-gap: 4rem;
     padding-top: 2rem;
 }
@@ -275,6 +283,7 @@ body.dark-theme{
     row-gap: 1.5rem;
 }
 .home__title{
+    font-family: 'Nanum Gothic', sans-serif;
     text-align: center;
     font-size: 30px;
     letter-Spacing: .3px;
@@ -282,20 +291,20 @@ body.dark-theme{
 }
 .home__blob{
     position: relative;
-    width: 200px;
-    height: 290px;
-    background-color: rgb(232, 228, 186);
+    width: 270px;
+    height: 390px;
     border: none;
-    border-radius: 12.5rem;
-    background-color: rgb(104, 102, 102);
-    box-shadow: 0 1px 20px ;
+    background-color: rgb(251, 251, 251);
+    box-shadow: 0 1px 20px rgb(153, 153, 212);
     justify-self: center;
     border-radius: 6.5rem;
     place-items: center;
+    object-fit: cover;
+    border-radius: 50%;
 }
 .home__perfil{
-    width: 170px;
-    height:260px;
+    width: 270px;
+    height:380px;
     background: linear-gradient(
         180deg,
         hsla(207, 48%, 72%, 0)
@@ -309,8 +318,8 @@ body.dark-theme{
     align-items: flex-end;
 }
 .home__perfil img{
-    width: 200px;
-    height: 250px;
+    width: 280px;
+    height: 380px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -476,7 +485,7 @@ body.dark-theme{
     margin-bottom: .75rem;
 }
 .qualification__img{
-    width: 150px;
+    width: 0px;
     position: absolute;
     right: -3rem;
     bottom: 12rem;
@@ -640,7 +649,7 @@ body.dark-theme{
 
 
 .testimonial__img{
-    width: 70px;
+    width: 80px;
     transform: rotate(30deg);
     position: absolute;
     top: 5rem;
@@ -665,6 +674,7 @@ body.dark-theme{
     width: initial;
     height: initial;
     top: initial;
+    padding-right: 3rem;
     bottom: .5rem;
 }
 
@@ -922,6 +932,9 @@ body.dark-theme{
 /* For smaller device */
 
 @media screen and (min-width: 340px) {
+    html{
+        overflow-x: hidden;
+    }
     .nav,
     .nav__menu{
         width: 380px;
@@ -956,7 +969,10 @@ body.dark-theme{
    }
 }
 /* smaller device */
-@media screen and (min-width: 250px) {
+@media screen and (min-width: 230px) {
+    html{
+        overflow-x: hidden;
+    }
     .nav,
     .nav__menu{
         width: 300px;
@@ -978,19 +994,56 @@ body.dark-theme{
    .nav__list{
     gap: 1rem 1.25rem;
    }
-   .skills{
+   .skills__info{
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 2rem;
+    gap: 2rem 1rem;
    }
 
    .projects__img{
     width: 200px;
     justify-self: center;
    }
+   .home__blob{
+    position: relative;
+    width: 170px;
+    height: 290px;
+    border: none;
+    background-color: rgb(251, 251, 251);
+    box-shadow: 0 1px 20px rgb(153, 153, 212);
+    justify-self: center;
+    border-radius: 6.5rem;
+    place-items: center;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+    .home__perfil{
+    width: 170px;
+    height:280px;
+    background: linear-gradient(
+        180deg,
+        hsla(207, 48%, 72%, 0)
+        hsla(207, 65%, 65%, 1)
+
+    );
+    border-radius: 5.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    }
+    .home__perfil img{
+    width: 180px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    }
 }
 
 /* For medium device */
 @media screen and (min-width: 576px) {
+    html{
+        overflow-x: hidden;
+    }
     .nav,
     .nav__menu{
         width: 280px;
@@ -1154,46 +1207,59 @@ body.dark-theme{
 
 @media screen and (min-width: 1048px){
     .container{
+        font-family: 'Nanum Gothic', sans-serif;
         margin-inline: auto;
     }
 }
 
 @media screen and (min-width: 1200px){
+    html{
+        overflow-x: hidden;
+    }
     .section__border{
         padding-bottom: 6rem;
     }
     .section__subtitle{
         margin-bottom: 5rem;
     }
-
     .home__title{
        font-size: 40px; 
     }
-    .home__blob{
-        width: 400px;
-        height: 540px;
-        border: none;
-        border-radius: 12.5rem;
-        background-color: rgb(104, 102, 102);
-        box-shadow: 0 1px 20px ;
+    .skills__info{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 1rem;
     }
-
+    .home__blob{
+        font-family: 'Nanum Gothic', sans-serif;
+        position: relative;
+        width: 350px;
+        height: 500px;
+        border: none;
+        background-color: rgb(251, 251, 251);
+        box-shadow: 0 1px 20px rgb(109, 109, 159);
+        justify-self: center;
+        border-radius: 6.5rem;
+        place-items: center;
+        object-fit: cover;
+        border-radius: 50%;
+    }
     .home__perfil{
-        width: 370px;
-        height: 520px;
-        border-radius: 10.6rem;
+        width: 350px;
+        height:500px;
+        background: linear-gradient(
+            180deg,
+            hsla(207, 48%, 72%, 0)
+            hsla(207, 65%, 65%, 1)
+    
+        );
     }
     .home__perfil img{
-       width: 450px;
+       width: 350px;
        height: 500px;
        object-fit: cover;
        border-radius: 50%;
        opacity: 2;
     }
-    /* .home__shape-wawes{
-        width: 100px;
-
-    } */
     .home__data{
         row-gap: 2.5rem;
     }
@@ -1221,9 +1287,6 @@ body.dark-theme{
     .skills__name{
         font-size: 16px;
     }
-    .skills__info{
-        gap: 3rem;
-    }
     .qualification__container{
         column-gap: 14rem;
     }
@@ -1243,6 +1306,7 @@ body.dark-theme{
     }
 
     .qualification__info{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
         position: relative;
         margin: 1rem;
     }
@@ -1284,6 +1348,7 @@ body.dark-theme{
         margin-bottom: 2rem;
     }
     .testimonial__container{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
         width: 566px;
     }
     .testimonial__container .swiper-button-prev,
