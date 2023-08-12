@@ -947,7 +947,7 @@ body.dark-theme{
    }
    .skills{
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 2rem;
+    gap: 2rem 0rem;
    }
 
    .projects__img{
