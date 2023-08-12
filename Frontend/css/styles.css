@@ -922,17 +922,65 @@ body.dark-theme{
 /* For smaller device */
 
 @media screen and (min-width: 340px) {
-   .container{
+    .nav,
+    .nav__menu{
+        width: 380px;
+    }
+    .nav{
+        margin: 0 auto;
+    }
+    .container{
     margin-inline: 1rem;
    } 
-   .nav__menu{
-    padding-bottom: 4rem;
+   .nav__menu a{
+    font-size: 12px;
+    padding-bottom: 0 4rem 0 4rem;
    }
+   .nav__menu{
+        width: 380px;
+    }
+    .nav{
+        margin: 0 auto;
+    }
    .nav__list{
     gap: 1rem 1.25rem;
    }
-   .skills__info{
+   .skills{
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2rem;
+   }
+
+   .projects__img{
+    width: 200px;
+    justify-self: center;
+   }
+}
+/* smaller device */
+@media screen and (min-width: 250px) {
+    .nav,
+    .nav__menu{
+        width: 300px;
+    }
+    .nav{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .container{
+    margin-inline: 1rem;
+   } 
+   .nav__menu a{
+    position: relative;
+    font-size: 12px;
+   }
+    .nav{
+        margin: 0 auto;
+    }
+   .nav__list{
+    gap: 1rem 1.25rem;
+   }
+   .skills{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2rem;
    }
 
    .projects__img{
@@ -945,7 +993,7 @@ body.dark-theme{
 @media screen and (min-width: 576px) {
     .nav,
     .nav__menu{
-        width: 380px;
+        width: 280px;
     }
     .nav{
         margin: 0 auto;
