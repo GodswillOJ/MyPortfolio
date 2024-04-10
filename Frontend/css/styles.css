@@ -318,6 +318,8 @@ body.dark-theme{
 .home__perfil img{
  
     object-fit: cover;
+    overflow-clip-margin: content-box;
+    overflow: clip;
     /* border-radius: 50%; */
 }
 
