@@ -303,7 +303,7 @@ body.dark-theme{
     border: none;
     background-color: none;
     justify-self: center;
-    border-radius: 6.5rem;
+    /* border-radius: 6.5rem; */
 }
 .home__perfil{
     background: linear-gradient(
@@ -317,7 +317,7 @@ body.dark-theme{
 }
 .home__perfil img{
     object-fit: cover;
-    /* overflow-clip-margin: content-box; */
+    overflow-clip-margin: content-box;
     overflow: clip;
     transition: transform 0.5s ease;
     /* border-radius: 50%; */
@@ -1019,13 +1019,13 @@ body.dark-theme{
     width: 200px;
     justify-self: center;
    }
-   .home__blob{
+   /* .home__blob{
     position: relative;
     border: none;
     background-color: rgb(251, 251, 251);
     box-shadow: 0 1px 20px rgb(153, 153, 212);
     justify-self: center;
-    }
+    } */
     .home__perfil{
     width: 170px;
     background: linear-gradient(
@@ -1069,13 +1069,13 @@ body.dark-theme{
     .projects__container .swiper-button-next{
         right: 1rem;
     }
-    .home__blob{
+    /* .home__blob{
         position: relative;
         border: none;
         background-color: rgb(251, 251, 251);
         box-shadow: 0 1px 20px rgb(153, 153, 212);
         justify-self: center;
-        }
+        } */
         .home__perfil{
         background: linear-gradient(
             180deg,
@@ -1127,7 +1127,7 @@ body.dark-theme{
     .projects__container{
         width: 500px;
     }
-    .home__blob{
+    /* .home__blob{
         position: relative;
         border: none;
         background-color: rgb(251, 251, 251);
@@ -1136,8 +1136,8 @@ body.dark-theme{
         border-radius: 6.5rem;
         place-items: center;
         object-fit: cover;
-        }
-        .home__perfil{
+        } */
+    .home__perfil{
         background: linear-gradient(
             180deg,
             hsla(207, 48%, 72%, 0)
@@ -1196,7 +1196,7 @@ body.dark-theme{
         transition: background .4s;
         padding: 0;
     }
-    .home__blob{
+    /* .home__blob{
         font-family: 'Nanum Gothic', sans-serif;
         position: relative;
         border: none;
@@ -1206,7 +1206,7 @@ body.dark-theme{
         border-radius: 6.5rem;
         place-items: center;
         object-fit: cover;
-    }
+    } */
     .home__perfil{
         background: linear-gradient(
             180deg,
@@ -1309,17 +1309,16 @@ body.dark-theme{
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem 1rem;
     }
-    .home__blob{
+    /* .home__blob{
         font-family: 'Nanum Gothic', sans-serif;
         position: relative;
         border: none;
-        background-color: rgb(251, 251, 251);
         box-shadow: 0 1px 20px rgb(109, 109, 159);
         justify-self: center;
         border-radius: 6.5rem;
         place-items: center;
         object-fit: cover;
-    }
+    } */
     .home__perfil{
         background: linear-gradient(
             180deg,
