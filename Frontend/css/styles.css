@@ -312,8 +312,6 @@ body.dark-theme{
         hsla(207, 65%, 65%, 1)
 
     );
-    border-radius: 5.5rem;
-    overflow: hidden;
 }
 .home__perfil img{
     object-fit: cover;
