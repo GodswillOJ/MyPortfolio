@@ -15,7 +15,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: rgb(247, 246, 240);
+    background-color: rgb(234, 248, 253);
     font-family: 'Lora', serif;
     font-family: 'Nanum Gothic', sans-serif;
     transition: .4s;
@@ -176,6 +176,7 @@ body.dark-theme{
     bottom: 2rem;
     left: 0;
     z-index: 100;
+    box-shadow: 0px 0.1px 6px rgb(15, 15, 15);
 }
 
 /* Navigation */
@@ -184,7 +185,7 @@ body.dark-theme{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(232, 228, 186);
+    background-color: rgb(111, 107, 236);
     box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
     padding-inline: 1.5rem;
     border-radius: 3rem;
@@ -193,7 +194,7 @@ body.dark-theme{
 .nav__logo,
 .nav__toggle,
 .nav__close{
-    color: rgb(9, 9, 7);
+    color: #000;
 }
 .nav__logo{
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
@@ -205,7 +206,7 @@ body.dark-theme{
     font-size: 1.25rem;
 }
 .nav a {
-    color: black;
+    color: #000;
     text-decoration: none;
     list-style: none;
     display: inline-block;
@@ -217,7 +218,7 @@ body.dark-theme{
         width: 88%;
         left: 0;
         right: 0;
-        background-color: aliceblue;
+        background-color: #015786;
         color: black;
         bottom: -60%;
         margin: 0 auto;
@@ -300,8 +301,7 @@ body.dark-theme{
 .home__blob{
     position: relative;
     border: none;
-    background-color: rgb(251, 251, 251);
-    box-shadow: 0 1px 20px rgb(153, 153, 212);
+    background-color: none;
     justify-self: center;
     border-radius: 6.5rem;
 }
@@ -317,7 +317,7 @@ body.dark-theme{
 }
 .home__perfil img{
     object-fit: cover;
-    overflow-clip-margin: content-box;
+    /* overflow-clip-margin: content-box; */
     overflow: clip;
     transition: transform 0.5s ease;
     /* border-radius: 50%; */
@@ -1200,8 +1200,8 @@ body.dark-theme{
         font-family: 'Nanum Gothic', sans-serif;
         position: relative;
         border: none;
-        background-color: rgb(251, 251, 251);
-        box-shadow: 0 1px 20px rgb(109, 109, 159);
+        background-color: none;
+
         justify-self: center;
         border-radius: 6.5rem;
         place-items: center;
